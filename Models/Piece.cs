@@ -17,21 +17,24 @@ namespace Comission.Models
         [MinLength(2, ErrorMessage = "Must be at least 2 characters")]
         [Display(Name = "Art Piece Name")]
         public string PieceName { get; set; }
+        
+        //Color Attributes
+        public bool Dark { get; set; }
+        public bool Light { get; set; }
+        public bool Colorful { get; set; }
+        public string ImgURL { get; set; }
 
-        [Required(ErrorMessage = "is required")]
-        [MinLength(2, ErrorMessage = "Must be at least 2 characters")]
-        [Display(Name = "Materials")]
-        public string Materials { get; set; }
+        //Style Attributes
+        public bool Modern { get; set; }
+        public bool Cubic { get; set; }
+        public bool Abstract { get; set; }
+        public bool Impressionist { get; set; }
 
-        [Required(ErrorMessage = "is required")]
-        [MinLength(2, ErrorMessage = "Must be at least 2 characters")]
-        [Display(Name = "Color")]
-        public string Color { get; set; }
-
-        [Required(ErrorMessage = "is required")]
-        [MinLength(2, ErrorMessage = "Must be at least 2 characters")]
-        [Display(Name = "Size")]
-        public string Size { get; set; }
+        //Material Attributes
+        public bool Watercolor { get; set; }
+        public bool OilBased { get; set; }
+        public bool Latex { get; set; }
+        public bool Enamel { get; set; }
 
         // We can add more here or change as needed.
 
@@ -39,10 +42,8 @@ namespace Comission.Models
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
         //Relationships:
-
-        public int UserId { get; set; }
-
+        //One to Many: An artpiece has a creator who is a User.
+        public int CreatorId { get; set; }
         public User PieceCreator { get; set; }
-        public User PieceComissioner { get; set; }
     }
 }

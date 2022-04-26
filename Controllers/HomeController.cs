@@ -112,7 +112,6 @@ namespace BeltExam.Controllers
             }
 
             HttpContext.Session.SetInt32("UserId", dbUser.UserId);
-            HttpContext.Session.SetString("FName", dbUser.FirstName);
             HttpContext.Session.SetString("UName", dbUser.Username);
             
             if (dbUser.isArtist == true)
@@ -122,9 +121,7 @@ namespace BeltExam.Controllers
             else 
             {
                 return RedirectToAction("Index", "User");
-            }
-            
-            
+            }  
         }
 
         [HttpPost("logout")]
