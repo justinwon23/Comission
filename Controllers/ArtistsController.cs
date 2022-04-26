@@ -12,7 +12,7 @@ using Comission.Models;
 
 namespace BeltExam.Controllers
 {
-    public class ArtistController : Controller
+    public class ArtistsController : Controller
     {
         private int? uid
         {

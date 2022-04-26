@@ -18,6 +18,5 @@ namespace Comission.Models
         [MinLength(8, ErrorMessage ="Must be at least 8 characters")]
         [Display(Name ="Password")]
         public string LoginPassword {get; set;}
-        
     }
 }
