@@ -10,7 +10,6 @@ namespace Comission.Models
     public class User
     {
         
-        
         [Key]
         public int UserId {get; set;}
 
@@ -49,14 +48,5 @@ namespace Comission.Models
 
         public DateTime CreatedAt {get; set;} = DateTime.Now;
         public DateTime UpdatedAt {get; set;} = DateTime.Now;
-
-        public string FullName ()
-        {
-            return FirstName + " " + LastName;
-        }
-
-
-
-
     }
 }
