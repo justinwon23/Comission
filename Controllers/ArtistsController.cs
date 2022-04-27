@@ -41,7 +41,7 @@ namespace BeltExam.Controllers
         private readonly ILogger<HomeController> _logger;
 
         private ComissionContext db;
-        public ArtistController(ComissionContext context, ILogger<HomeController> logger)
+        public ArtistsController(ComissionContext context, ILogger<HomeController> logger)
         {
             db = context;
             _logger = logger;

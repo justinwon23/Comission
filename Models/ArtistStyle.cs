@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Comission.Models
 {
-    public class ArtistStyle
+    public class Style
     {
 
 
