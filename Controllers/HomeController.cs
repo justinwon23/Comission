@@ -116,7 +116,7 @@ namespace BeltExam.Controllers
             
             if (dbUser.isArtist == true)
             {
-                return RedirectToAction("Index", "Artist");
+                return RedirectToAction("Dashboard", "Artists");
             }
             else 
             {
