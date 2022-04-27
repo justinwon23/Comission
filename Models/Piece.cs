@@ -23,20 +23,31 @@ namespace Comission.Models
         public string ImgURL { get; set; }
         
         //Color Attributes
+        [Display(Name = "Dark")]
         public bool Dark { get; set; }
+        [Display(Name = "Light")]
         public bool Light { get; set; }
+        [Display(Name = "Colorful")]
         public bool Colorful { get; set; }
 
         //Style Attributes
+        [Display(Name = "Modern")]
         public bool Modern { get; set; }
+        [Display(Name = "Cubic")]
         public bool Cubic { get; set; }
+        [Display(Name = "Abstract")]
         public bool Abstract { get; set; }
+        [Display(Name = "Impressionist")]
         public bool Impressionist { get; set; }
 
         //Material Attributes
+        [Display(Name = "Watercolor")]
         public bool Watercolor { get; set; }
+        [Display(Name = "OilBased")]
         public bool OilBased { get; set; }
+        [Display(Name = "Latex")]
         public bool Latex { get; set; }
+        [Display(Name = "Enamel")]
         public bool Enamel { get; set; }
 
         // We can add more here or change as needed.
@@ -46,7 +57,6 @@ namespace Comission.Models
 
         //Relationships:
         //One to Many: An artpiece has a creator who is a User.
-        public int CreatorId { get; set; }
-        public User PieceCreator { get; set; }
+        public List<UserArtConnection> ArtHasUsers { get; set; }
     }
 }
