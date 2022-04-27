@@ -7,10 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
-using ProjName.Models;
 using Comission.Models;
 
-namespace BeltExam.Controllers
+namespace Comission.Controllers
 {
     public class HomeController : Controller
     {
@@ -50,6 +49,7 @@ namespace BeltExam.Controllers
         {
             return View();
         }
+
 
         [HttpPost("create")]
         public IActionResult Create(User newUser)

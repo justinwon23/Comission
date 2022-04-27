@@ -1,0 +1,19 @@
+@model User
+
+<h1>Success</h1>
+
+<div class="container">
+    @foreach (var item in ViewBag.userStyleDict)
+    {
+        <p>@item</p>
+    }
+
+    @foreach (var connection in Model.UserHasArt)
+    {
+        <p>@connection.Piece.PieceName</p>
+        <img src="@connection.Piece.ImgURL" alt="">
+    }
+
+
+
+</div>
