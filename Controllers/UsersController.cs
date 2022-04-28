@@ -46,9 +46,15 @@ namespace Comission.Controllers
             db = context;
             _logger = logger;
         }
-        public IActionResult Index()
+        public IActionResult Dashboard()
         {
-            return View();
+            return View("Dashboard");
+        }
+
+        [HttpGet("message/{UserId}")]
+        public IActionResult NewChat()
+        {
+            return View("NewChat");
         }
 
         public IActionResult Privacy()

@@ -1,0 +1,26 @@
+@model Message
+@{
+int? uid = Context.Session.GetInt32("UserId");
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form asp-controller = "Users" asp-action ='CreateMessage'method="POST">
+        
+        <label asp-for='Content'></label>
+        <span asp-validation-for="Content"></span>
+        <input asp-for='Content'/>
+
+        <input type="hidden" asp-for='SenderId' value="@uid">
+
+        <input type="hidden" asp-for='ReceiverId' value="@ViewBag.ReceiverId">
+    </form>
+</body>
+</html>
