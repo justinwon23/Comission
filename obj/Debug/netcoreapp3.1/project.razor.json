@@ -14447,8 +14447,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\Users\\NewChat.cshtml",
+      "TargetPath": "Views\\Users\\NewChat.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\Artists\\AllPieces.cshtml",
       "TargetPath": "Views\\Artists\\AllPieces.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\Users\\Inbox.cshtml",
+      "TargetPath": "Views\\Users\\Inbox.cshtml",
       "FileKind": "mvc"
     },
     {

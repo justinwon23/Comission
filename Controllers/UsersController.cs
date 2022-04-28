@@ -74,6 +74,18 @@ namespace Comission.Controllers
             return RedirectToAction("UsersBids");
         }
 
+        [HttpGet("message/{UserId}")]
+        public IActionResult NewChat()
+        {
+            return View("NewChat");
+        }
+
+        [HttpGet("inbox/{UserId}")]
+        public IActionResult Inbox()
+        {
+            return View("Inbox");
+        }
+
         public IActionResult Privacy()
         {
             return View();
