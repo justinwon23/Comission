@@ -200,3 +200,5 @@ C:\Users\andre\Documents\C#\Comission\obj\Debug\netcoreapp3.1\Razor\Views\Artist
 C:\Users\andre\Documents\C#\Comission\obj\Debug\netcoreapp3.1\Razor\Views\Users\Dashboard.cshtml.g.cs
 C:\Users\andre\Documents\C#\Comission\obj\Debug\netcoreapp3.1\Razor\Views\Users\UserBids.cshtml.g.cs
 C:\Users\andre\Documents\C#\Comission\obj\Debug\netcoreapp3.1\Razor\Views\Users\NewBid.cshtml.g.cs
+C:\Users\andre\Documents\C#\Comission\obj\Debug\netcoreapp3.1\Razor\Views\Users\Inbox.cshtml.g.cs
+C:\Users\andre\Documents\C#\Comission\obj\Debug\netcoreapp3.1\Razor\Views\Users\NewChat.cshtml.g.cs
