@@ -17,6 +17,31 @@ namespace Comission.Migrations
                 .HasAnnotation("ProductVersion", "3.1.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("Comission.Models.Message", b =>
+                {
+                    b.Property<int>("MessageId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<int>("ReceiverId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SenderId")
+                        .HasColumnType("int");
+
+                    b.HasKey("MessageId");
+
+                    b.HasIndex("ReceiverId");
+
+                    b.HasIndex("SenderId");
+
+                    b.ToTable("Messages");
+                });
+
             modelBuilder.Entity("Comission.Models.Piece", b =>
                 {
                     b.Property<int>("PieceId")
@@ -134,6 +159,21 @@ namespace Comission.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("UserArtConnection");
+                });
+
+            modelBuilder.Entity("Comission.Models.Message", b =>
+                {
+                    b.HasOne("Comission.Models.User", "Receiver")
+                        .WithMany("ReceiverMessages")
+                        .HasForeignKey("ReceiverId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Comission.Models.User", "Sender")
+                        .WithMany("SenderMessages")
+                        .HasForeignKey("SenderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Comission.Models.UserArtConnection", b =>

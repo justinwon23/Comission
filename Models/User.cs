@@ -52,6 +52,10 @@ namespace Comission.Models
         public DateTime UpdatedAt {get; set;} = DateTime.Now;
 
         public List<UserArtConnection> UserHasArt {get; set;}
+        public List<Message> SenderMessages {get; set;}
+        public List<Message> ReceiverMessages {get; set;}
+        
+        
 
         
         

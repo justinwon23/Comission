@@ -12,6 +12,7 @@ namespace Comission.Models
         public DbSet<User> Users { get; set; }
         public DbSet<Piece> Pieces { get; set; }
         public DbSet<UserArtConnection> UserArtConnection { get; set; }
+        public DbSet<Message> Messages { get; set; }
 
         // public DbSet<Widget> Widgets { get; set; }
         // public DbSet<Item> Items { get; set; }
