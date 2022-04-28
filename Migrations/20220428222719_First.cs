@@ -56,6 +56,35 @@ namespace Comission.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Bids",
+                columns: table => new
+                {
+                    BidId = table.Column<int>(nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    Description = table.Column<string>(nullable: false),
+                    Price = table.Column<int>(nullable: false),
+                    Deadline = table.Column<DateTime>(nullable: false),
+                    BuyerId = table.Column<int>(nullable: false),
+                    ArtistId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Bids", x => x.BidId);
+                    table.ForeignKey(
+                        name: "FK_Bids_Users_ArtistId",
+                        column: x => x.ArtistId,
+                        principalTable: "Users",
+                        principalColumn: "UserId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Bids_Users_BuyerId",
+                        column: x => x.BuyerId,
+                        principalTable: "Users",
+                        principalColumn: "UserId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Messages",
                 columns: table => new
                 {
@@ -109,6 +138,16 @@ namespace Comission.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_Bids_ArtistId",
+                table: "Bids",
+                column: "ArtistId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Bids_BuyerId",
+                table: "Bids",
+                column: "BuyerId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Messages_ReceiverId",
                 table: "Messages",
                 column: "ReceiverId");
@@ -131,6 +170,9 @@ namespace Comission.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Bids");
+
             migrationBuilder.DropTable(
                 name: "Messages");
 

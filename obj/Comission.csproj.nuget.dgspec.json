@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Justin\\Desktop\\c#\\Comission-2\\Comission.csproj": {}
+    "C:\\Users\\andre\\Documents\\C#\\Comission\\Comission.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Justin\\Desktop\\c#\\Comission-2\\Comission.csproj": {
+    "C:\\Users\\andre\\Documents\\C#\\Comission\\Comission.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Justin\\Desktop\\c#\\Comission-2\\Comission.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\Documents\\C#\\Comission\\Comission.csproj",
         "projectName": "Comission",
-        "projectPath": "C:\\Users\\Justin\\Desktop\\c#\\Comission-2\\Comission.csproj",
-        "packagesPath": "C:\\Users\\Justin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Justin\\Desktop\\c#\\Comission-2\\obj\\",
+        "projectPath": "C:\\Users\\andre\\Documents\\C#\\Comission\\Comission.csproj",
+        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andre\\Documents\\C#\\Comission\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Justin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

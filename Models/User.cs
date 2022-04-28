@@ -10,7 +10,6 @@ namespace Comission.Models
     
     public class User
     {
-        private ComissionContext db;
         
         [Key]
         public int UserId {get; set;}
@@ -54,6 +53,8 @@ namespace Comission.Models
         public List<UserArtConnection> UserHasArt {get; set;}
         public List<Message> SenderMessages {get; set;}
         public List<Message> ReceiverMessages {get; set;}
+        public List<Bid> BuyerBids {get; set;}
+        public List<Bid> ArtistBids {get; set;}
         
         
 
