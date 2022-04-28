@@ -11,6 +11,7 @@ namespace Comission.Models
         // the names of these properties will be the names of the tables in the db
         public DbSet<User> Users { get; set; }
         public DbSet<Piece> Pieces { get; set; }
+        public DbSet<Bid> Bids { get; set; }
         public DbSet<UserArtConnection> UserArtConnection { get; set; }
         public DbSet<Message> Messages { get; set; }
 

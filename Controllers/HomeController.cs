@@ -120,7 +120,7 @@ namespace Comission.Controllers
             }
             else 
             {
-                return RedirectToAction("Index", "User");
+                return RedirectToAction("UserDashboard", "Users");
             }  
         }
 

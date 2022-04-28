@@ -90,6 +90,13 @@ namespace Comission.Controllers
             return RedirectToAction("AllPieces");
         }
 
+        [HttpGet("/artist/contracts/")]
+
+        public IActionResult ArtistsContracts()
+        {
+
+            return View("ArtistsContracts");
+        }
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
