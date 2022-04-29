@@ -10,11 +10,19 @@
         <p>@item</p>
     }
 
+<div class="row">
     @foreach (var connection in Model.UserHasArt)
     {
-        <p>@connection.Piece.PieceName</p>
-        <img src="@connection.Piece.ImgURL" alt="">
+        <div class="col justify-content-center"  style="width: 15rem;">
+            <div class="d-flex align-items-center">
+
+            <img class="mx-auto" style="width: 15rem;" src="@connection.Piece.ImgURL" alt="">
+            </div>
+            <p class="text-center">@connection.Piece.PieceName</p>          
+        </div>
+
     }
+</div>
 
 </div>
 
