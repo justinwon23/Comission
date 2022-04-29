@@ -47,6 +47,7 @@ namespace Comission.Controllers
             db = context;
             _logger = logger;
         }
+
         [HttpGet("/user/dashboard")]
         public IActionResult UserDashboard()
         {
@@ -75,10 +76,12 @@ namespace Comission.Controllers
             return RedirectToAction("UsersBids");
         }
 
+
         [HttpGet("message/{UserId}")]
         public IActionResult NewChat()
         {
             return View("NewChat");
+
         }
 
         [HttpGet("inbox/{UserId}")]

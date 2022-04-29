@@ -1,7 +1,9 @@
 @model User
 
 <h1>Success</h1>
-
+<form asp-controller= "Users" asp-action="NewMessage" asp-route-ReceiverId= "@Model.UserId">
+<button>Private Message</button>
+</form>
 <div class="container">
     @foreach (var item in ViewBag.userStyleDict)
     {
@@ -14,6 +16,5 @@
         <img src="@connection.Piece.ImgURL" alt="">
     }
 
-
-
 </div>
+
