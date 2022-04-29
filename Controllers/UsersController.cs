@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 
 using Comission.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Comission.Controllers
 {
@@ -81,9 +82,16 @@ namespace Comission.Controllers
         }
 
         [HttpGet("inbox/{UserId}")]
-        public IActionResult Inbox()
+        public IActionResult Inbox(int UserId)
         {
-            return View("Inbox");
+            List<Message> allMessages = db.Messages
+            .Include(M => M.Receiver)
+            .Include(M => M.Sender)
+            .Where(M => M.ReceiverId == uid || M.SenderId == uid)
+            .OrderBy(M => M.CreatedAt)
+            .ToList();
+
+            return View("Inbox", allMessages);
         }
 
         [HttpGet("message/{ReceiverId}")]
@@ -91,12 +99,6 @@ namespace Comission.Controllers
         {
             ViewBag.ReceiverId = ReceiverId;
             return View("NewChat");
-        }
-
-        [HttpGet("inbox/{UserId}")]
-        public IActionResult Inbox(int UserId)
-        {
-            return View("Inbox");
         }
 
         [HttpPost("createmessage")]
