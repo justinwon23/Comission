@@ -7,6 +7,7 @@
     <form asp-controller="Artists" asp-action="TestAddPiece" method="POST">
 
         <div class="form-group">
+            <h2>Upload Art Piece Image</h2>
             <div>
                 <label asp-for="PieceName"></label>
                 <input asp-for="PieceName" type="text">
@@ -15,8 +16,11 @@
                 <label asp-for="ImgURL"></label>
                 <input asp-for="ImgURL" type="text">
             </div>
+            <hr>
             <div>
                 <h2>Attributes</h2>
+                <h4>Color Scheme</h4>
+                
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" asp-for="Dark" >
                     <label class="form-check-label" asp-for="Dark"></label>
@@ -29,6 +33,8 @@
                     <input class="form-check-input" type="checkbox"  asp-for="Colorful">
                     <label class="form-check-label" asp-for="Colorful"></label>
                 </div>
+                <hr>
+                <h4>Art Style</h4>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" asp-for="Modern">
                     <label class="form-check-label" asp-for="Modern"></label>
@@ -45,6 +51,8 @@
                     <input class="form-check-input" type="checkbox" asp-for="Impressionist">
                     <label class="form-check-label" asp-for="Impressionist"></label>
                 </div>
+                <hr>
+                <h4>Paint Type</h4>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" asp-for="Watercolor">
                     <label class="form-check-label" asp-for="Watercolor"></label>
@@ -61,6 +69,8 @@
                     <input class="form-check-input" type="checkbox" asp-for="Enamel">
                     <label class="form-check-label" asp-for="Enamel"></label>
                 </div>
+
+                <hr>
 
                 <input type="submit" value="Submit Piece">
                 
