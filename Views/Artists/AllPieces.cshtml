@@ -1,18 +1,24 @@
 @model User
 
-<h1>Success</h1>
-
 <div class="container">
-    @foreach (var item in ViewBag.userStyleDict)
-    {
-        <p>@item</p>
-    }
+    <h1 class="Display-1 text-center py-5 card bg-light shadow">@Model.FirstName @Model.LastName's Portfolio</h1>
 
+</div>
+
+<div class="row">
     @foreach (var connection in Model.UserHasArt)
     {
-        <p>@connection.Piece.PieceName</p>
-        <img src="@connection.Piece.ImgURL" alt="">
+        <div class="col justify-content-center"  style="width: 15rem;">
+            <div class="d-flex align-items-center">
+
+            <img class="mx-auto" style="width: 15rem;" src="@connection.Piece.ImgURL" alt="">
+            </div>
+            <p class="text-center">@connection.Piece.PieceName</p>          
+        </div>
+
     }
+</div>
+
 
 
 

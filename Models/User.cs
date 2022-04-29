@@ -259,21 +259,60 @@ namespace Comission.Models
             int enamelCount = GetEnamelCount(loggedInUser);
             float enamelValue = CalculateStyleRatio(totalPieces, GetEnamelCount(loggedInUser));
 
-            OverView.Add(new KeyValuePair<string, float>("DarkValue", darkValue));
-            OverView.Add(new KeyValuePair<string, float>("LightValue", lightValue));
-            OverView.Add(new KeyValuePair<string, float>("ColorfulValue", colorfulValue));
-            OverView.Add(new KeyValuePair<string, float>("ModernValue", modernValue));
-            OverView.Add(new KeyValuePair<string, float>("CubicValue", cubicValue));
-            OverView.Add(new KeyValuePair<string, float>("AbstractValue", abstractValue));
-            OverView.Add(new KeyValuePair<string, float>("ImpressionistValue", impressionistValue));
-            OverView.Add(new KeyValuePair<string, float>("WaterColorValue", waterColorValue));
-            OverView.Add(new KeyValuePair<string, float>("OilBasedValue", oilBasedValue));
-            OverView.Add(new KeyValuePair<string, float>("LatexValue", latexValue));
-            OverView.Add(new KeyValuePair<string, float>("EnamelValue", enamelValue));
+            OverView.Add(new KeyValuePair<string, float>("Dark Colors", darkValue));
+            OverView.Add(new KeyValuePair<string, float>("Light Colors", lightValue));
+            OverView.Add(new KeyValuePair<string, float>("Colorful", colorfulValue));
+            OverView.Add(new KeyValuePair<string, float>("Modern", modernValue));
+            OverView.Add(new KeyValuePair<string, float>("Cubic", cubicValue));
+            OverView.Add(new KeyValuePair<string, float>("Abstract", abstractValue));
+            OverView.Add(new KeyValuePair<string, float>("Impressionist", impressionistValue));
+            OverView.Add(new KeyValuePair<string, float>("Water Color", waterColorValue));
+            OverView.Add(new KeyValuePair<string, float>("Oil Based", oilBasedValue));
+            OverView.Add(new KeyValuePair<string, float>("Latex", latexValue));
+            OverView.Add(new KeyValuePair<string, float>("Enamel", enamelValue));
             
 
             return (Dictionary<string, float>)OverView;
 
         }
+
+        // public Dictionary<string, float> TopThreeStyles(User loggedInUser)
+        // {
+        //     Dictionary<string, float> styleOverView = StyleOverView(loggedInUser);
+        //     Dictionary<string, float> TopThree = new Dictionary<string, float>();
+        //     KeyValuePair<string, float> firstStyle = new KeyValuePair<string, float>();
+        //     KeyValuePair<string, float> secondStyle = new KeyValuePair<string, float>();
+        //     KeyValuePair<string, float> thirdStyle = new KeyValuePair<string, float>();
+
+
+
+        //     foreach (KeyValuePair<string, float> style in styleOverView)
+        //     {
+        //         if(!(float)firstStyle.Value || (float)style.Value > (float)firstStyle.Value)
+        //         {
+        //             thirdStyle = secondStyle;
+        //             secondStyle = firstStyle;
+        //             firstStyle = style;
+
+        //         }
+        //         if(!(float)secondStyle.Value || (float)style.Value > (float)secondStyle.Value)
+        //         {
+        //             thirdStyle = secondStyle;
+        //             secondStyle == style;
+        //         }
+        //         if(!(float)thirdStyle.Value ||(float)style.Value > (float)thirdStyle.Value)
+        //         {
+        //             thirdStyle = style;
+        //         }
+                
+        //     }
+        //     TopThree.Add(firstStyle);
+        //     TopThree.Add(secondStyle);
+        //     TopThree.Add(thirdStyle);
+
+        //     return TopThree;
+        // }
+
+
     }
 }
