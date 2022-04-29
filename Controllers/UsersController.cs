@@ -19,7 +19,7 @@ namespace Comission.Controllers
             get
             {
                 return HttpContext.Session.GetInt32("UserId");
-                
+
             }
         }
         private string FName
@@ -64,7 +64,7 @@ namespace Comission.Controllers
         }
 
         [HttpPost("user/createbid")]
-        public IActionResult CreateBid (Bid newBid)
+        public IActionResult CreateBid(Bid newBid)
         {
             if (ModelState.IsValid == false)
             {
@@ -84,6 +84,34 @@ namespace Comission.Controllers
         public IActionResult Inbox()
         {
             return View("Inbox");
+        }
+
+        [HttpGet("message/{ReceiverId}")]
+        public IActionResult NewChat(int ReceiverId)
+        {
+            ViewBag.ReceiverId = ReceiverId;
+            return View("NewChat");
+        }
+
+        [HttpGet("inbox/{UserId}")]
+        public IActionResult Inbox(int UserId)
+        {
+            return View("Inbox");
+        }
+
+        [HttpPost("createmessage")]
+        public IActionResult CreateMessage(Message newMessage)
+        {
+            if (ModelState.IsValid == false)
+            {
+                ViewBag.ReceiverId = newMessage.ReceiverId;
+                return View("NewChat");
+            }
+
+            db.Messages.Add(newMessage);
+            db.SaveChanges();
+
+            return RedirectToAction("Inbox");
         }
 
         public IActionResult Privacy()
