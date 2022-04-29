@@ -16,7 +16,7 @@ int? uid = Context.Session.GetInt32("UserId");
         
         <label asp-for='Content'></label>
         <span asp-validation-for="Content"></span>
-        <input asp-for='Content'/>
+        <textarea asp-for='Content'></textarea>
 
         <input type="hidden" asp-for='SenderId' value="@uid">
 

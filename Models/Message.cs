@@ -30,5 +30,8 @@ namespace Comission.Models
         [ForeignKey("ReceiverId")]
         [InverseProperty("ReceiverMessages")]
         public virtual User Receiver {get; set;}
+
+        public DateTime CreatedAt {get; set;} = DateTime.Now;
+        public DateTime UpdatedAt {get; set;} = DateTime.Now;
     }
 }

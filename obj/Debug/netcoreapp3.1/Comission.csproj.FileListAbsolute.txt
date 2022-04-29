@@ -130,3 +130,6 @@ C:\Users\Justin\Desktop\c#\Comission-2\obj\Debug\netcoreapp3.1\Comission.csproj.
 C:\Users\Justin\Desktop\c#\Comission-2\obj\Debug\netcoreapp3.1\staticwebassets\Comission.StaticWebAssets.Manifest.cache
 C:\Users\Justin\Desktop\c#\Comission-2\obj\Debug\netcoreapp3.1\staticwebassets\Comission.StaticWebAssets.xml
 C:\Users\Justin\Desktop\c#\Comission-2\obj\Debug\netcoreapp3.1\Comission.genruntimeconfig.cache
+C:\Users\Justin\Desktop\c#\Comission-2\obj\Debug\netcoreapp3.1\Razor\Views\Users\Dashboard.cshtml.g.cs
+C:\Users\Justin\Desktop\c#\Comission-2\obj\Debug\netcoreapp3.1\Razor\Views\Users\Inbox.cshtml.g.cs
+C:\Users\Justin\Desktop\c#\Comission-2\obj\Debug\netcoreapp3.1\Razor\Views\Users\NewChat.cshtml.g.cs
