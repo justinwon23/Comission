@@ -1,1 +1,34 @@
-Where User Creates New Bid
+@model Bid
+@{
+    int? uid = Context.Session.GetInt32("UserId");
+}
+
+<div class="container">
+    <form asp-controller="Users" asp-action="CreateBid" method="POST" class="border rounded w-50 p-3">
+        <div>
+            <div class="form-group">
+                <label asp-for="Description">Description of work requested: </label>
+                <span asp-validation-for="Description" class="text-danger font-weight-bold"></span>
+                <textarea placeholder="Color, material, size, etc." asp-for="Description"
+                    class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price">Price: </label>
+                @* Because this gets passed as an int *@
+                <span asp-validation-for="Price" class="text-danger font-weight-bold"></span>
+                &nbsp;$ &nbsp;<input asp-for="Price" type="number" asp-for="Price" style="width: 80px;" />&nbsp;.00&nbsp;
+            </div>
+            <div class="form-group">
+                <label asp-for="Deadline">Deadline: </label>
+                <span asp-validation-for="Deadline" class="text-danger font-weight-bold"></span>
+                <input asp-for="Deadline" class="form-control" />
+            </div>
+            <div>
+                <input asp-for="BuyerId" type="hidden" value="@uid">
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-outline-success">Post New Bid</button>
+        </div>
+    </form>
+</div>

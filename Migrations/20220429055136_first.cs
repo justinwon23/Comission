@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Comission.Migrations
 {
-    public partial class First : Migration
+    public partial class first : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -65,7 +65,7 @@ namespace Comission.Migrations
                     Price = table.Column<int>(nullable: false),
                     Deadline = table.Column<DateTime>(nullable: false),
                     BuyerId = table.Column<int>(nullable: false),
-                    ArtistId = table.Column<int>(nullable: false)
+                    ArtistId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -75,7 +75,7 @@ namespace Comission.Migrations
                         column: x => x.ArtistId,
                         principalTable: "Users",
                         principalColumn: "UserId",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Bids_Users_BuyerId",
                         column: x => x.BuyerId,
@@ -91,6 +91,8 @@ namespace Comission.Migrations
                     MessageId = table.Column<int>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Content = table.Column<string>(nullable: false),
+                    CreatedAt = table.Column<DateTime>(nullable: false),
+                    UpdatedAt = table.Column<DateTime>(nullable: false),
                     SenderId = table.Column<int>(nullable: false),
                     ReceiverId = table.Column<int>(nullable: false)
                 },

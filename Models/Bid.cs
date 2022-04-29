@@ -23,7 +23,7 @@ namespace Comission.Models
         [DataType(DataType.DateTime)]
         public DateTime Deadline {get; set;}
 
-        [Required(ErrorMessage = "is required")]
+        // [Required(ErrorMessage = "is required")]
         public int BuyerId {get; set;}
         [ForeignKey("BuyerId")]
         [InverseProperty("BuyerBids")]
@@ -31,7 +31,7 @@ namespace Comission.Models
         public virtual User Buyer {get; set;}
 
 
-        public int ArtistId {get; set;}
+        public int? ArtistId {get; set;}
 
         [ForeignKey("ArtistId")]
         [InverseProperty("ArtistBids")]

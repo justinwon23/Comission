@@ -19,7 +19,7 @@ namespace Comission.Controllers
             get
             {
                 return HttpContext.Session.GetInt32("UserId");
-                
+
             }
         }
         private string FName
@@ -64,14 +64,20 @@ namespace Comission.Controllers
         }
 
         [HttpPost("user/createbid")]
-        public IActionResult CreateBid (Bid newBid)
+        public IActionResult CreateBid(Bid newBid)
         {
-            if (ModelState.IsValid == false)
+            Console.WriteLine(newBid);
+            if (ModelState.IsValid == true)
             {
-                return View("NewBid");
-            }
 
-            return RedirectToAction("UsersBids");
+                db.Bids.Add(newBid);
+                db.SaveChanges();
+
+
+                return RedirectToAction("UserBids");
+            }
+            
+            return RedirectToAction("NewBid");
         }
 
         [HttpGet("message/{UserId}")]
