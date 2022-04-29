@@ -46,15 +46,48 @@ namespace Comission.Controllers
             db = context;
             _logger = logger;
         }
-        public IActionResult Dashboard()
+
+        [HttpGet("/user/dashboard")]
+        public IActionResult UserDashboard()
         {
             return View("Dashboard");
         }
+
+        [HttpGet("/user/bids")]
+        public IActionResult UsersBids()
+        {
+            return View("UserBids");
+        }
+        [HttpGet("/user/newbid")]
+        public IActionResult NewBid()
+        {
+            return View("NewBid");
+        }
+
+        [HttpPost("user/createbid")]
+        public IActionResult CreateBid (Bid newBid)
+        {
+            if (ModelState.IsValid == false)
+            {
+                return View("NewBid");
+            }
+
+            return RedirectToAction("UsersBids");
+        }
+
 
         [HttpGet("message/{UserId}")]
         public IActionResult NewChat()
         {
             return View("NewChat");
+
+        }
+
+        [HttpGet("inbox/{UserId}")]
+        public IActionResult Inbox()
+        {
+            return View("Inbox");
+
         }
 
         public IActionResult Privacy()

@@ -17,6 +17,37 @@ namespace Comission.Migrations
                 .HasAnnotation("ProductVersion", "3.1.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("Comission.Models.Bid", b =>
+                {
+                    b.Property<int>("BidId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("ArtistId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("BuyerId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Deadline")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
+
+                    b.HasKey("BidId");
+
+                    b.HasIndex("ArtistId");
+
+                    b.HasIndex("BuyerId");
+
+                    b.ToTable("Bids");
+                });
+
             modelBuilder.Entity("Comission.Models.Message", b =>
                 {
                     b.Property<int>("MessageId")
@@ -159,6 +190,21 @@ namespace Comission.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("UserArtConnection");
+                });
+
+            modelBuilder.Entity("Comission.Models.Bid", b =>
+                {
+                    b.HasOne("Comission.Models.User", "Artist")
+                        .WithMany("ArtistBids")
+                        .HasForeignKey("ArtistId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Comission.Models.User", "Buyer")
+                        .WithMany("BuyerBids")
+                        .HasForeignKey("BuyerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Comission.Models.Message", b =>

@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\ID139\\OneDrive\\Desktop\\coding_dojo\\c#\\Comission\\Comission.csproj",
+  "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Comission.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14402,68 +14402,98 @@
   "RootNamespace": "Comission",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\ID139\\OneDrive\\Desktop\\coding_dojo\\c#\\Comission\\Views\\Artists\\Dashboard.cshtml",
-      "TargetPath": "Views\\Artists\\Dashboard.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ID139\\OneDrive\\Desktop\\coding_dojo\\c#\\Comission\\Views\\Home\\_Logging.cshtml",
-      "TargetPath": "Views\\Home\\_Logging.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ID139\\OneDrive\\Desktop\\coding_dojo\\c#\\Comission\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ID139\\OneDrive\\Desktop\\coding_dojo\\c#\\Comission\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\Artists\\ArtistsContracts.cshtml",
+      "TargetPath": "Views\\Artists\\ArtistsContracts.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ID139\\OneDrive\\Desktop\\coding_dojo\\c#\\Comission\\Views\\Users\\index.cshtml",
-      "TargetPath": "Views\\Users\\index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ID139\\OneDrive\\Desktop\\coding_dojo\\c#\\Comission\\Views\\Artists\\TestNewPiece.cshtml",
-      "TargetPath": "Views\\Artists\\TestNewPiece.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ID139\\OneDrive\\Desktop\\coding_dojo\\c#\\Comission\\Views\\Artists\\AllPieces.cshtml",
-      "TargetPath": "Views\\Artists\\AllPieces.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ID139\\OneDrive\\Desktop\\coding_dojo\\c#\\Comission\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ID139\\OneDrive\\Desktop\\coding_dojo\\c#\\Comission\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ID139\\OneDrive\\Desktop\\coding_dojo\\c#\\Comission\\Views\\Artists\\Index.cshtml",
-      "TargetPath": "Views\\Artists\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ID139\\OneDrive\\Desktop\\coding_dojo\\c#\\Comission\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ID139\\OneDrive\\Desktop\\coding_dojo\\c#\\Comission\\Views\\Shared\\Error.cshtml",
+      "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ID139\\OneDrive\\Desktop\\coding_dojo\\c#\\Comission\\Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\Users\\Dashboard.cshtml",
+      "TargetPath": "Views\\Users\\Dashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\Artists\\TestNewPiece.cshtml",
+      "TargetPath": "Views\\Artists\\TestNewPiece.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\Users\\NewBid.cshtml",
+      "TargetPath": "Views\\Users\\NewBid.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\Home\\_Logging.cshtml",
+      "TargetPath": "Views\\Home\\_Logging.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\Users\\NewChat.cshtml",
+      "TargetPath": "Views\\Users\\NewChat.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\Artists\\AllPieces.cshtml",
+      "TargetPath": "Views\\Artists\\AllPieces.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\Users\\Inbox.cshtml",
+      "TargetPath": "Views\\Users\\Inbox.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\Artists\\Index.cshtml",
+      "TargetPath": "Views\\Artists\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\Artists\\Dashboard.cshtml",
+      "TargetPath": "Views\\Artists\\Dashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\Users\\UserBids.cshtml",
+      "TargetPath": "Views\\Users\\UserBids.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\andre\\Documents\\C#\\Comission\\Views\\Users\\index.cshtml",
+      "TargetPath": "Views\\Users\\index.cshtml",
       "FileKind": "mvc"
     }
   ],

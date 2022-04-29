@@ -11,24 +11,27 @@ namespace Comission.Models
     {
         [Key]
 
-        public int MessageId {get; set;}
+        public int MessageId { get; set; }
 
         [Required(ErrorMessage = "is required")]
-        public string Content {get; set;}
+        public string Content { get; set; }
 
         [Required(ErrorMessage = "is required")]
-        public int SenderId {get; set;}
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime UpdatedAt { get; set; } = DateTime.Now;
+        public int SenderId { get; set; }
         [ForeignKey("SenderId")]
         [InverseProperty("SenderMessages")]
 
-        public virtual User Sender {get; set;}
+        public virtual User Sender { get; set; }
 
         [Required(ErrorMessage = "is required")]
 
-        public int ReceiverId {get; set;}
+        public int ReceiverId { get; set; }
 
         [ForeignKey("ReceiverId")]
         [InverseProperty("ReceiverMessages")]
-        public virtual User Receiver {get; set;}
+        public virtual User Receiver { get; set; }
+
     }
 }
