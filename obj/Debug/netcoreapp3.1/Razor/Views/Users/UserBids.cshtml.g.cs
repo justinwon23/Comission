@@ -26,8 +26,15 @@ using Comission.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\andre\Documents\C#\Comission\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Http;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"65ea70f70f0952a56cdb31287eae9fb0af882db8", @"/Views/Users/UserBids.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"992ba1bf3d7827a498ff1bd58f62ea4358195439", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e4ffc12d84195d95404eadfe15f2ea7e40f6971e", @"/Views/_ViewImports.cshtml")]
     public class Views_Users_UserBids : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

@@ -26,8 +26,15 @@ using Comission.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\andre\Documents\C#\Comission\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Http;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f2503ba5a1bd5f304ff7068ef4210ca10f3a9c50", @"/Views/Artists/Dashboard.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"992ba1bf3d7827a498ff1bd58f62ea4358195439", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e4ffc12d84195d95404eadfe15f2ea7e40f6971e", @"/Views/_ViewImports.cshtml")]
     public class Views_Artists_Dashboard : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Artists", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -121,7 +128,7 @@ using Comission.Models;
 
         <div class=""d-flex align-items-center justify-content-center"" style=""width: 45rem; height: 10rem; "">
             <h1 class=""card-title display-6 text-light text-center"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f2503ba5a1bd5f304ff7068ef4210ca10f3a9c507846", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f2503ba5a1bd5f304ff7068ef4210ca10f3a9c508024", async() => {
                 WriteLiteral("Your Contracts");
             }
             );
