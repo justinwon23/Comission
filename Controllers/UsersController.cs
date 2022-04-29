@@ -68,12 +68,18 @@ namespace Comission.Controllers
         [HttpPost("user/createbid")]
         public IActionResult CreateBid(Bid newBid)
         {
-            if (ModelState.IsValid == false)
+            Console.WriteLine(newBid);
+            if (ModelState.IsValid == true)
             {
-                return View("NewBid");
+
+                db.Bids.Add(newBid);
+                db.SaveChanges();
+
+
+                return RedirectToAction("UserBids");
             }
 
-            return RedirectToAction("UsersBids");
+            return RedirectToAction("NewBid");
         }
 
 
